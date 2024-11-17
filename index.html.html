@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Maldonado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #ffecd2, #fcb69f);
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #8b0000;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px #ff4500;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #333;
+            margin-top: 10px;
+        }
+        .question {
+            background-color: #ffe4e1;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .answers label {
+            display: block;
+            background-color: #ffebcd;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 8px 0;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .answers label:hover {
+            background-color: #ffdead;
+        }
+        #result {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #8b0000;
+            margin-top: 30px;
+            padding: 15px;
+            border: 2px solid #ff4500;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        button {
+            background-color: #ff4500;
+            border: none;
+            padding: 15px 30px;
+            color: white;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Test de Maldonado</h1>
+<p>Responde con toda tu honestidad (y desmadre), y descubre si eres Maldonado: el enano con más huevos, actitud y ganas de apostarlo todo.</p>
+
+<form id="maldonadoQuiz">
+    <div class="question">
+        <h2>1. ¿Un México socialista?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q1" value="A"> a) Que chinguen a su madre los ricos, ¡todo igualito y sin estantes altos!</label>
+            <label><input type="radio" name="q1" value="B"> b) Me vale madre, mientras no me cobren por los banquitos.</label>
+            <label><input type="radio" name="q1" value="C"> c) "¿Socialismo? Nomás no me quiten mi consola y hagan lo que quieran."</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h2>2. ¿Qué harías con el poder absoluto?</h2>
+        <div class="answers">
+            <label><input type="radio" name="q2" value="A"> a) Derrumbar todos los edificios altos, ¡que todo sea a mi medida!</label>
+            <label><input type="radio" name="q2" value="B"> b) Nacionalizar las escaleras portátiles para que nadie sufra.</label>
+            <label><input type="radio" name="q2" value="C"> c) Poner multas a los altos que no se agachen cuando me hablan.</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h2>3. En las marchas revolucionarias:</h2>
+        <div class="answers">
+            <label><input type="radio" name="q3" value="A"> a) Encima de los hombros de un cabrón alto, gritándole consignas al gobierno.</label>
+            <label><input type="radio" name="q3" value="B"> b) Dirigiendo con un megáfono más grande que yo, porque soy el jefe.</label>
+            <label><input type="radio" name="q3" value="C"> c) En la retaguardia, insultando a los policías con toda la confianza del mundo.</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h2>4. Decoración del hogar:</h2>
+        <div class="answers">
+            <label><input type="radio" name="q4" value="A"> a) Todo en miniatura para que ningún cabrón alto se sienta a gusto.</label>
+            <label><input type="radio" name="q4" value="B"> b) Paredes llenas de fotos mías en poses épicas, porque lo bueno viene en envase chiquito.</label>
+            <label><input type="radio" name="q4" value="C"> c) Pongo estantes bajitos para que hasta los altos tengan que agacharse.</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h2>5. Maldonado y los muebles altos:</h2>
+        <div class="answers">
+            <label><input type="radio" name="q5" value="A"> a) Le miento la madre al diseñador y busco a alguien más alto que yo.</label>
+            <label><input type="radio" name="q5" value="B"> b) Uso una escoba, un palo o lo que sea para bajarlo.</label>
+            <label><input type="radio" name="q5" value="C"> c) Cambio de producto, porque ese pinche estante no me va a ganar.</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h2>6. En un concierto:</h2>
+        <div class="answers">
+            <label><input type="radio" name="q6" value="A"> a) Me trepo a un güey alto y le grito: “¡Soy tu amo ahora, cabrón!”</label>
+            <label><input type="radio" name="q6" value="B"> b) Hago berrinche hasta que alguien me deje pasar al frente.</label>
+            <label><input type="radio" name="q6" value="C"> c) Mejor me voy a ver las pantallas de los lados; al menos ahí alcanzo.</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h2>7. En una pelea:</h2>
+        <div class="answers">
+            <label><input type="radio" name="q7" value="A"> a) Le doy un putazo directo en las espinillas, ¡que se acuerde de mí!</label>
+            <label><input type="radio" name="q7" value="B"> b) Me burlo de su jeta hasta que lo deje llorando.</label>
+            <label><input type="radio" name="q7" value="C"> c) Le grito desde lejos: “¡Baja aquí a decirme eso, pinche jirafa!”</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h2>8. En el trabajo:</h2>
+        <div class="answers">
+            <label><input type="radio" name="q8" value="A"> a) Les digo: “Ah, claro, nomás dame mis alas, pendejo.”</label>
+            <label><input type="radio" name="q8" value="B"> b) Llamo al más alto para que lo haga mientras me río.</label>
+            <label><input type="radio" name="q8" value="C"> c) Me quedo sentado, fingiendo que no escuché.</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h2>9. En el casino:</h2>
+        <div class="answers">
+            <label><input type="radio" name="q9" value="A"> a) Me siento en la máquina más jodida diciendo: “Esta vez lo recupero todo, ¡chingada madre!”</label>
+            <label><input type="radio" name="q9" value="B"> b) Me acerco a los que ganan y les digo: “Déjame esa máquina, está caliente.”</label>
+            <label><input type="radio" name="q9" value="C"> c) Mejor me pongo a observar a los demás mientras planeo mi siguiente movida.</label>
+        </div>
+    </div>
+
+    <div class="question">
+        <h2>10. Maldonado en una cita:</h2>
+        <div class="answers">
+            <label><input type="radio" name="q10" value="A"> a) Llego y le digo: “Es lo que hay, y si no te gusta, ¡mejor pa’ la otra!”</label>
+            <label><input type="radio" name="q10" value="B"> b) Le cuento historias épicas de cuando los altos me respetan.</label>
+            <label><input type="radio" name="q10" value="C"> c) Me cago de risa si intenta llevarme a un lugar con mesas altas.</label>
+        </div>
+    </div>
+
+    <button type="button" onclick="calculateResult()">Ver resultado</button>
+</form>
+
+<div id="result"></div>
+
+<script>
+    function calculateResult() {
+        const answers = document.querySelectorAll('input[type="radio"]:checked');
+        if (answers.length < 10) {
+            document.getElementById("result").innerText = "Responde todas las preguntas, cabrón.";
+            return;
+        }
+
+        let score = 0;
+        answers.forEach(answer => {
+            if (answer.value === "A") score += 3;
+            else if (answer.value === "B") score += 2;
+            else if (answer.value === "C") score += 1;
+        });
+
+        let resultText;
+        if (score >= 25) resultText = "Eres 100% Maldonado: El auténtico. ¡A huevo!";
+        else if (score >= 18) resultText = "Eres Maldonado a medias, pero tienes potencial.";
+        else resultText = "Ni al caso con Maldonado, la neta.";
+
+        document.getElementById("result").innerText = resultText;
+    }
+</script>
+
+</body>
+</html>
